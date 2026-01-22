@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Painel ADM | Denúncias</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="voltar" onclick="history.back()">← Voltar</button>
+
+<div id="loginBox">
+  <h2>Login ADM</h2>
+  <input id="user" placeholder="Usuário">
+  <input id="pass" type="password" placeholder="Senha">
+  <button onclick="login()">Entrar</button>
+</div>
+
+<div id="painel" style="display:none;">
+  <h1>📥 Caixa de Denúncias</h1>
+  <div id="lista"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
