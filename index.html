@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Denúncias | Echo Squad</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="voltar" onclick="history.back()">← Voltar</button>
+
+<h1>🚨 Denúncias — Echo Squad</h1>
+
+<div class="menu">
+  <button onclick="mostrar('form')">🚨 Fazer Denúncia</button>
+  <button onclick="mostrar('minhas')">📄 Minhas Denúncias</button>
+  <button onclick="mostrar('status')">⏳ Acompanhar Status</button>
+  <button onclick="mostrar('regras')">📜 Regras</button>
+  <button onclick="mostrar('tipos')">⚠️ Infrações</button>
+  <button onclick="mostrar('faq')">❓ Dúvidas</button>
+</div>
+
+<section id="form" class="box">
+  <h2>Fazer Denúncia</h2>
+  <input id="nick" placeholder="Seu nick">
+  <input id="acusado" placeholder="Nick do acusado">
+  <input id="motivo" placeholder="Motivo">
+  <textarea id="desc" placeholder="Descreva o ocorrido"></textarea>
+  <input type="file" id="imagem" multiple>
+  <button onclick="enviarDenuncia()">Enviar</button>
+</section>
+
+<section id="minhas" class="box"></section>
+<section id="status" class="box"></section>
+
+<section id="regras" class="box">
+  <h2>Regras</h2>
+  <p>Denúncias falsas resultam em punição. Envie provas reais.</p>
+</section>
+
+<section id="tipos" class="box">
+  <h2>Tipos de Infrações</h2>
+  <ul>
+    <li>Hack</li><li>X-ray</li><li>Bug abuse</li><li>Griefing</li><li>Ofensas</li>
+  </ul>
+</section>
+
+<section id="faq" class="box">
+  <h2>Dúvidas Frequentes</h2>
+  <p>As denúncias são analisadas pela staff o mais rápido possível.</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
